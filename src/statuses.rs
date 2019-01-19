@@ -60,11 +60,11 @@ pub struct Status {
     pub created_at: String,
     pub updated_at: String,
     pub state: State,
-    pub target_url: String,
-    pub description: String,
+    pub target_url: Option<String>,
+    pub description: Option<String>,
     pub id: u64,
     pub url: String,
-    pub context: String,
+    pub context: Option<String>,
     pub creator: User,
 }
 
