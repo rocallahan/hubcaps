@@ -7,6 +7,7 @@ use serde::Deserialize;
 pub struct User {
     pub login: String,
     pub id: u64,
+    pub name: Option<String>,
     pub avatar_url: String,
     pub gravatar_id: String,
     pub url: String,
