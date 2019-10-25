@@ -22,11 +22,11 @@ pretty_env_logger = "0.3"
 tokio = "0.1"
 
 [dependencies]
-dirs = { version = "1.0", optional = true }
+dirs = { version = "2", optional = true }
 futures = "0.1"
 http = "0.1"
-hyperx = "0.13"
-jsonwebtoken = "6"
+hyperx = "0.15"
+jsonwebtoken = { git = "https://github.com/khuey/jsonwebtoken", branch = "next" }
 mime = "0.3"
 log = "0.4"
 url = "1.7"
@@ -34,7 +34,7 @@ reqwest = { version = "0.9.10", default-features = false }
 serde = { version = "1.0.84", features = ['derive'] }
 serde_derive = "1.0"
 serde_json = "1.0"
-error-chain = "0.12"
+error-chain = { git = "https://github.com/khuey/error-chain", branch = "downstream" }
 base64 = "0.10"
 percent-encoding = "1"
 
