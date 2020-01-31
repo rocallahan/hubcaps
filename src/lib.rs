@@ -335,7 +335,7 @@ impl ExpiringJWTCredential {
             iss: app_id,
         };
         let header = jwt::Header::new(jwt::Algorithm::RS256);
-        let jwt = jwt::encode(&header, &payload, jwt::Key::Der(private_key))?;
+        let jwt = jwt::encode(&header, &payload, &jwt::EncodingKey::from_rsa_der(private_key))?;
 
         Ok(ExpiringJWTCredential {
             created_at: created_at,

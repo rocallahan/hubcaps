@@ -26,7 +26,7 @@ dirs = { version = "2", optional = true }
 futures = "0.1"
 http = "0.1"
 hyperx = "0.15"
-jsonwebtoken = { git = "https://github.com/khuey/jsonwebtoken", branch = "next" }
+jsonwebtoken = "7"
 mime = "0.3"
 log = "0.4"
 url = "1.7"
